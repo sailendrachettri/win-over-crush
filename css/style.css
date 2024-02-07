@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: pink;
+}
+
+:root{
+    --font-header: 'DynaPuff', system-ui;
+}
+
+.container{
+    margin-top: 5rem;
+    padding:  0 0.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.container img{
+    width: 350px;
+    margin-bottom: 3rem;
+    border-radius: 4px;
+}
+
+.container h1{
+    font-family: var(--font-header);
+    background: linear-gradient(to right, #ff8c00, #ff00ff); /* Linear gradient text background */
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+}
+
+.btns{
+    margin: 4rem 0;
+    text-align: center;
+}
+
+.btns button{
+    padding: 5px 10px;
+    border: 1px solid #efefef;
+    border-radius: 5px;
+    font-size: 2rem;
+    box-shadow: 2px 2px 2px 3px whitesmoke;
+    cursor: pointer;
+     background: linear-gradient(to right, #ff8c00, #ff00ff); /* Linear gradient text background */
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+    
+}
+
+.btns button:nth-child(1){
+    margin: 0 10px 15px 0;   
+}
+
+
+footer{
+    margin: 5rem 0 1rem 0;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding-right: 1rem;
+}
+
+footer p{
+    color: #efefef;
+    opacity: 0.8;
+}
