@@ -8,7 +8,7 @@ let secondGif = document.getElementById("second-gif");
 let lastGif = document.getElementById("last-gif");
 
 let fontSize = 35;
-let noMsg = ["Really?", "Are you Sure?", "Sach mai?", "Are you Serious?", "Don't make me cry!", "Are you certain?", "Do you really know?", "Can you confirm?", "Are you positive?", "Are you convinced?", "Is that a fact?", "Are you confident?", "Do you have no doubt?", "Are you absolutely sure?", "Are you certain of that?", "Are you confident about that?", "Are you completely sure?", "Can you vouch for it?", "Are you clear on that?", "Are you certain of your answer?", "Can you affirm that?"]
+let noMsg = ["Really?", "Are you Sure?", "Sach mai?", "Are you Serious?", "Don't make me cry!", "Are you absolutely sure?", "Are you completely sure?"]
 
 function yesBtn(){
     lastGif.style.display = "block";
@@ -25,9 +25,9 @@ function noBtn(){
     firstGif.style.display = "none";
     secondGif.style.display = "block";
 
+    fontSize += 20;
     yesbtn.style.fontSize = `${fontSize}px`;
-    fontSize += 10;
 
-    let rand = Math.floor(Math.random()*20)
+    let rand = Math.floor(Math.random()*6)
     nobtn.innerText = noMsg[rand];
 }
