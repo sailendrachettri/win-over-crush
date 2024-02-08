@@ -68,7 +68,7 @@ footer{
 
 footer p{
     color: #efefef;
-    opacity: 0.8;
+    opacity: 0.2;
 }
 
 @media (max-width: 500px) {
